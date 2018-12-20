@@ -24,10 +24,10 @@ public:
 
 		random_device rnd;
 		mt19937 mt(rnd());
-		uniform_int_distribution<> rnd100(1, 1000);
-		int t = rnd100(mt);
+		uniform_int_distribution<> rnd1000(1, 1000);
+		int t = rnd1000(mt);
 
-		//tは1以上100以下の数を一様に選ばれ、1が出ると更新をサボる
+		//tは1以上1000以下の数を一様に選ばれ、1が出ると更新をサボる
 		if (t == 1)return;
 
 
